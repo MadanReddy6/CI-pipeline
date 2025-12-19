@@ -1,0 +1,1 @@
+print("i'm learning CI pipeline by github actions")
