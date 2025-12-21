@@ -22,3 +22,7 @@ def test_insufficient_funds():
     result = account.withdraw(100)
     assert result == False
     assert account.get_balance() == 50
+
+def test_intentionally_fail():
+    """This test is designed to fail to demonstrate CI failure."""
+    assert 100 == 200, "Math is broken! 100 should not equal 200"
